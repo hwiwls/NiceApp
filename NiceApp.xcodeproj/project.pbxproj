@@ -13,9 +13,11 @@
 		2ED213A92A49AACD00CA0ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213A72A49AACD00CA0ABE /* Main.storyboard */; };
 		2ED213AB2A49AACE00CA0ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213AA2A49AACE00CA0ABE /* Assets.xcassets */; };
 		2ED213AE2A49AACE00CA0ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213AC2A49AACE00CA0ABE /* LaunchScreen.storyboard */; };
+		494656CA8D31D36B2D3BBA2D /* Pods_NiceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25590DFFB54D2C7E030A14B3 /* Pods_NiceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25590DFFB54D2C7E030A14B3 /* Pods_NiceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED2139E2A49AACD00CA0ABE /* NiceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED213A12A49AACD00CA0ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ED213A32A49AACD00CA0ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2ED213AA2A49AACE00CA0ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ED213AD2A49AACE00CA0ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ED213AF2A49AACE00CA0ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32C75E565C42DC27A1BD6B1A /* Pods-NiceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.debug.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3452349B178977F7141A34E9 /* Pods-NiceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.release.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494656CA8D31D36B2D3BBA2D /* Pods_NiceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C97E0350A06576FF6467BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25590DFFB54D2C7E030A14B3 /* Pods_NiceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2ED213952A49AACD00CA0ABE = {
 			isa = PBXGroup;
 			children = (
 				2ED213A02A49AACD00CA0ABE /* NiceApp */,
 				2ED2139F2A49AACD00CA0ABE /* Products */,
+				3E173F216DBB846F9A761094 /* Pods */,
+				0C97E0350A06576FF6467BDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,33 @@
 		2ED213A02A49AACD00CA0ABE /* NiceApp */ = {
 			isa = PBXGroup;
 			children = (
+				2ED213B52A49AD9E00CA0ABE /* ViewControllers */,
 				2ED213A12A49AACD00CA0ABE /* AppDelegate.swift */,
 				2ED213A32A49AACD00CA0ABE /* SceneDelegate.swift */,
-				2ED213A52A49AACD00CA0ABE /* MainViewController.swift */,
 				2ED213A72A49AACD00CA0ABE /* Main.storyboard */,
 				2ED213AA2A49AACE00CA0ABE /* Assets.xcassets */,
 				2ED213AC2A49AACE00CA0ABE /* LaunchScreen.storyboard */,
 				2ED213AF2A49AACE00CA0ABE /* Info.plist */,
 			);
 			path = NiceApp;
+			sourceTree = "<group>";
+		};
+		2ED213B52A49AD9E00CA0ABE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2ED213A52A49AACD00CA0ABE /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3E173F216DBB846F9A761094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32C75E565C42DC27A1BD6B1A /* Pods-NiceApp.debug.xcconfig */,
+				3452349B178977F7141A34E9 /* Pods-NiceApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ED213B22A49AACE00CA0ABE /* Build configuration list for PBXNativeTarget "NiceApp" */;
 			buildPhases = (
+				D5C2D2F86CC5B24F2CD7359D /* [CP] Check Pods Manifest.lock */,
 				2ED2139A2A49AACD00CA0ABE /* Sources */,
 				2ED2139B2A49AACD00CA0ABE /* Frameworks */,
 				2ED2139C2A49AACD00CA0ABE /* Resources */,
+				7E51A55B99BD97A3B9178CCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E51A55B99BD97A3B9178CCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NiceApp/Pods-NiceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C2D2F86CC5B24F2CD7359D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ED2139A2A49AACD00CA0ABE /* Sources */ = {
@@ -282,6 +359,7 @@
 		};
 		2ED213B32A49AACE00CA0ABE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32C75E565C42DC27A1BD6B1A /* Pods-NiceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +388,7 @@
 		};
 		2ED213B42A49AACE00CA0ABE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3452349B178977F7141A34E9 /* Pods-NiceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
