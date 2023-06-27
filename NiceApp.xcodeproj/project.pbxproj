@@ -14,6 +14,7 @@
 		2ED213AB2A49AACE00CA0ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213AA2A49AACE00CA0ABE /* Assets.xcassets */; };
 		2ED213AE2A49AACE00CA0ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213AC2A49AACE00CA0ABE /* LaunchScreen.storyboard */; };
 		2ED213B72A49CD0A00CA0ABE /* 133076-welcome.json in Resources */ = {isa = PBXBuildFile; fileRef = 2ED213B62A49CD0A00CA0ABE /* 133076-welcome.json */; };
+		2ED213B92A49D56A00CA0ABE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED213B82A49D56A00CA0ABE /* LoginViewController.swift */; };
 		494656CA8D31D36B2D3BBA2D /* Pods_NiceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25590DFFB54D2C7E030A14B3 /* Pods_NiceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		2ED213AD2A49AACE00CA0ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ED213AF2A49AACE00CA0ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2ED213B62A49CD0A00CA0ABE /* 133076-welcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "133076-welcome.json"; sourceTree = "<group>"; };
+		2ED213B82A49D56A00CA0ABE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		32C75E565C42DC27A1BD6B1A /* Pods-NiceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.debug.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3452349B178977F7141A34E9 /* Pods-NiceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiceApp.release.xcconfig"; path = "Target Support Files/Pods-NiceApp/Pods-NiceApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				2ED213A52A49AACD00CA0ABE /* MainViewController.swift */,
+				2ED213B82A49D56A00CA0ABE /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED213B92A49D56A00CA0ABE /* LoginViewController.swift in Sources */,
 				2ED213A62A49AACD00CA0ABE /* MainViewController.swift in Sources */,
 				2ED213A22A49AACD00CA0ABE /* AppDelegate.swift in Sources */,
 				2ED213A42A49AACD00CA0ABE /* SceneDelegate.swift in Sources */,
